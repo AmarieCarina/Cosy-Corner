@@ -1,0 +1,446 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display:flex;
+    flex-direction:column;
+}
+main{
+    flex:1;
+    overflow-y:auto;
+    overflow-x:hidden;
+    min-height: 100vh;
+    padding: 0 10em;
+}
+header{
+    background-color:#edd3b8;
+    display:flex;
+    align-items:center;
+    position:sticky;
+    top:0;
+    width:100%;
+    z-index:9999;
+}
+
+
+/*LOGO*/
+.logo{
+    padding:1em;
+    transition: transform 0.5s ease; 
+}
+.logo > a{
+    display: inline;
+    text-decoration:none;
+    font-size:1.5em;
+    font-family: "Kaushan Script", cursive;
+    text-shadow: 1px 1px 2px;
+    border:0px solid;
+    color:#d68c7c;
+    padding:0.5em;
+    position:relative;
+    top:-0.3em;   
+    left:-0.4em;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.logo > img{
+    width:2em;
+    margin-left:2em;
+}
+
+
+/*SEARCHBAR*/ 
+.searchbar {
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;   
+    background-color: #edd3b8;
+    padding:2em;
+    flex-grow: 1;
+    max-width: 40em;
+}
+.search-icon {
+  position: absolute;
+  right: 2.5em;
+  pointer-events: none; 
+  font-size: 1.2em;
+  color:#ab7150;
+}
+.searchbar input[type="search"]{
+    width:100%;
+    border: 1em solid #dca18f;
+    border-radius:10px;
+    background-color:#dca18f;
+    font-family: "Russo One", sans-serif;
+    color:#ab7150;
+    padding-right:2em;
+}
+.searchbar input[type="search"]::placeholder{
+    color:#ab7150;
+    font-family: "Russo One", sans-serif;
+}
+input[type="search"]::-webkit-search-cancel-button {
+    display:none;
+}
+.searchbar input:hover{
+    box-shadow: 0 0 0.3em #aaa;
+    cursor:pointer;
+}
+#search-results{
+    display: none;
+    flex-direction:column;
+    position: absolute;
+    top:70%;
+    bottom:auto;
+    left:5%;
+    right:5%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius:0.5em;
+    z-index: 9999;       
+    max-height: 300px;
+    overflow-y: auto;     
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    font-family: "Kumbh Sans", sans-serif;
+}
+.search-item {
+  padding: 8px;
+  cursor: pointer;
+  text-decoration:none;
+  color: black;
+}
+.search-item:hover {
+  background-color: #f2f2f2;
+  color:#ab7150;
+}
+
+
+/*BUTOANE STANGA SUS*/
+.options{
+    display:inline-flex;
+    align-items:start;
+}
+.options a{
+    text-decoration:none;
+    width: 2em;
+    height: 2em;
+    font-size: 1.5em;
+    background: none;
+    color: #ab7150;
+    margin:0 0.5em;
+    border:1px solid white;
+    border-radius:50%;
+    transition: transform 0.3s ease;
+}
+.profile-button{
+    padding: 0.4em 0.6em;
+}
+.favorite{
+    padding: 0.4em 0.5em;
+}
+.cart{
+    padding: 0.4em 0.3em;
+    margin-right:2em;
+}
+.carucior{
+    padding: 0.4em 0.3em;
+    margin-right:2em;
+}
+.options a:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 0.3em #aaa;
+}
+
+/*MENIU DROPDOWN*/
+nav{
+    background-color: #dca18f;
+    padding:1em;
+    position:sticky;
+    top:6.5em;
+    z-index:200;
+}
+nav a{
+    text-decoration:none;
+    color:#ab7150;
+}
+nav ul{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    list-style-type:none;
+    height:1em;
+}
+nav > ul > li{
+    position:relative;
+    border:2px solid #dca18f;
+    border-radius:0.7em;
+    padding: 0.4em 0.4em;
+    font-family: "Kumbh Sans", sans-serif;
+    color:#ab7150;
+    font-weight:bold;
+    transition: background-color 0.2s ease;
+}
+nav > ul > li:hover{
+    background-color:#edd3b8;
+    box-shadow: 0 0 0.3em #edd3b8;
+    color:grey;
+}
+nav > ul > li > ul.submeniu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left: -2.5em;
+}
+#decoratiuni:hover{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor:default;
+}
+#decoratiuni:hover .submeniu{
+    display:block;
+    font-family: "Kumbh Sans", sans-serif;
+    color:#ab7150;
+    font-weight:bold;
+    text-align:center;
+}
+#decoratiuni:hover #last{
+    border-bottom-left-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
+}
+nav ul.submeniu > li{
+    margin:0;
+    background-color:#edd3b8;
+    padding:0.5em 0.7em;
+    border: 1px solid #edd3b8;
+
+}
+nav ul.submeniu > li:hover{
+    color:grey;
+    background-color: #dca18f;
+    box-shadow: 0 0 0.3em #edd3b8;
+}
+
+
+/*RESPONSIVE - MENIU BURGER*/
+.burger{
+    display:none;
+}
+#toggle{
+    opacity:0;
+}
+.sidemenu{
+    position:fixed;
+    top:5em;
+    width:10em;
+    height:100%;
+    background-color:#edd3b8;
+    padding: 2em 1em;
+    /*TRANSITION*/
+    opacity:0;
+    transform: translateX(-100vw);
+    transition:opacity 0.5s ease, transform 0.5s ease; 
+    pointer-events:none;
+}
+.sidemenu a{
+    text-decoration:none;
+    color:#ab7150;
+}
+.sidemenu ul{
+    list-style-type: none;
+    transition: left 3s;
+    padding-top:0.5em;
+    padding-left:0.5em;
+}
+.sidemenu li{
+    padding:0.5em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: bold;
+    color: #ab7150;
+    font-size:0.7em;
+}
+.sidemenu li:hover{
+    background-color: #dca18f;
+    box-shadow: 0 0 0.3em #edd3b8;
+    border-radius:2em;
+}
+#extra{
+    border-radius:1em;
+}
+#extra ul{
+    display:none;
+    position:fixed;
+    padding: 0.3em;
+}
+#extra:hover ul{
+    display:block;
+    position:relative;
+    margin-left:1em;
+}
+#extra li{
+    font-size:1em;
+}
+#extra li:hover{
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    background-color: #edd3b8;
+    padding:0.4em;
+    padding-right:0.5em;
+}
+@media screen and (max-width:780px){
+    .meniu{
+        display:none;
+    }
+    .burger{
+        display:block;
+    }
+    .options{
+        display:none;
+    }
+    #toggle {
+        position: absolute;
+        visibility:hidden;
+    }  
+    header label {
+        display:block;
+        margin-left:2em;
+        padding:0.5em 0.7em;
+        cursor: pointer;
+        color: #ab7150;
+        background-color: #edd3b8;
+        border: 1px solid white;
+        border-radius: 50%;
+        transition:transform 0.4s ease;
+    }
+    header label:hover{
+        box-shadow: 0 0 0.3em #aaa;
+    }
+    header input:checked + label.burger {
+        color: grey;
+        background-color: #dca18f;
+        transform:rotate(90deg);
+    }
+    header input:checked ~ .sidemenu{
+        opacity:1;
+        transform:translateX(0);
+        pointer-events:auto;
+        
+    }
+
+}
+
+main {
+    background-color: #f4ece4;
+    width: 100%;
+    padding-bottom: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #ab7150;
+    margin-top:auto;
+    text-align:center;
+    overflow:hidden;
+    font-family: "Kumbh Sans", sans-serif;
+}
+#contact{
+    display: flex;
+    justify-content: center;
+    padding: 2em 4em;
+    gap: 2em;
+}
+#contact img{
+    padding: 0.7em;
+    height:4em;
+    border:2px solid black;
+    border-radius:1.5em;
+    transition:transform 0.4s ease, background-color 0.2s ease;
+    cursor:pointer;
+}
+#contact img:hover{
+    transform: scale(1.1);
+    background-color: #edd3b8;
+}
+#detalii{
+    display:flex;
+    justify-content:center;
+    font-size:0.8em;
+}
+#detalii a{
+    text-decoration:none;
+    color:black;
+    border:1px solid;
+    border-radius:2em;
+    font-size:1em;
+    padding:0.5em;
+    margin: 0 1em;
+    transition:transform 0.2s ease, background-color 0.3s ease;
+}
+#detalii a:hover{
+    transform: scale(1.08);
+    background-color: #f4ece4;
+}
+footer p{
+    padding:2em;
+    transition: transform 0.7s ease;
+    margin: 0 10em;
+}
+footer p:hover{
+    transform:scale(1.1);
+}
+@media screen and (max-width:900px) {
+    footer{
+        position:relative;
+        height:10em;
+    }
+    #contact{
+        display:inline-block;
+        padding:0.5em;
+    }
+    #detalii a{
+        font-size:0.6em;
+    }
+    #contact img{
+        transform: scale(0.7);
+        margin: auto 0.01em;
+        position:relative;
+        width:3.5em;
+        height: 3.5em;
+    }
+    #contact img:hover{
+        transform:scale(0.8);
+    }
+    footer p{
+        margin:1em;
+        padding:0;
+    }
+}
+
+
+/* Scroll bar stylings */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dab79c; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ab7150; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ab7150; 
+}

@@ -1,0 +1,59 @@
+main{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas: "a b";
+}
+#pozaPromo{
+    width:30em;
+    height:20em;
+    padding:0.5em;
+    grid-area:a;
+    transition: transform 0.3s ease;
+    border-radius:1em;
+    position:relative;
+    bottom:0em;
+    padding-bottom:0em;
+}
+#pozaPromo:hover{
+    transform: scale(1.05);
+}
+#containerPozaPromo{
+    padding:1em;
+    background-color: white;
+    margin:2em;
+    border-radius:1em;
+    padding-bottom:0em;
+    
+    
+}
+#detaliiPromo{
+    grid-area:b;
+    margin:4em;
+}
+#detaliiPromo h3{
+    padding:0.5em;
+    font-family: "Kumbh Sans", sans-serif;
+    color:#ab7150;
+}
+#detaliiPromo a{
+    text-decoration:none;
+    font-family: "Kumbh Sans", sans-serif;
+    color:#ab7150;
+}
+#detaliiPromo ul{
+    list-style-type:circle;
+}
+#addToCart{
+    margin:2em;
+    border-radius:1em;
+    border-color:#ab7150;
+    background-color: #dca18f;
+    padding:1em;
+    font-family: "Russo One", sans-serif;
+    color:white;
+   cursor:pointer;
+}
+
+section{
+    background-color: #f4ece4;
+}

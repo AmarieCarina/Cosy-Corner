@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>Personal Account</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="poze/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+
+    <link href="general.css" rel="stylesheet">
+    <link href="profil.css" rel="stylesheet">
+    <script src="profil.js"></script>
+    <script src="general.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat+Brush&family=Kaushan+Script&family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Russo+One&family=Rye&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="burger">☰</label>
+            <div class="logo">
+                <img src="poze/favicon.png" alt="404">
+                <a href="home.html">Cosycorner</a>
+            </div>
+            <div class="searchbar">
+                <input type="search" placeholder="Search..">
+                <span class="search-icon">🔍︎</span>
+            </div>
+            <div class="options">
+                <a href="profil.html" class="profile-button">𖠋</a>
+                <a href="favorite.html" class="favorite">❤︎</a>
+                <a href="cos.html" class="cart">🛒</a>
+            </div>
+            <div class="sidemenu">
+                <ul>
+                    <li>
+                        <a href="profil.html">Cont</a></li>
+                    <li>
+                        <a href="favorite.html">Favorite</a></li>
+                    <li>
+                        <a href="cos.html">Cos de cumparaturi</a></li>
+                    <li>
+                        <a href="home.html#lumanari">Iz de toamna</a>
+                    </li>
+                    <li>
+                        <a href="home.html#paturi">Paturi confortabile</a></li>
+                    <li id="extra">Decoratiuni
+                        <ul>
+                            <li>
+                                <a href="home.html#cani">Cani</a></li>
+                            <li>
+                                <a href="home.html#lampi">Lampi</a></li>
+                            <li>
+                                <a href="home.html#rame">Rame foto</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="home.html#bauturi">Bauturi calde</a></li>
+                </ul>
+            </div>
+    </header>
+        
+    <nav>
+            <ul class="meniu">
+                <li>
+                    <a href="home.html#lumanari">Iz de toamna</a>
+                </li>
+                <li>
+                    <a href="home.html#paturi">Paturi confortabile</a></li>
+                <li id="decoratiuni">Decoratiuni
+                    <ul class="submeniu">
+                        <li>
+                            <a href="home.html#cani">Cani</a></li>
+                        <li>
+                            <a href="home.html#lampi">Lampi</a></li>
+                        <li id="last">
+                            <a href="home.html#rame">Rame foto</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="home.html#bauturi">Bauturi calde</a></li>
+            </ul>
+    </nav>
+
+    <main>
+        <section id="date">
+            <p id="salut"></p>
+            <h4>Date personale</h4>
+            <div id="inputs">
+                <label>username: <input type="text" id="username"></label>
+                <label>adresa de email: <input type="text" id="email"></label>
+                <label>numar de telefon: <input type="text" id="telefon"></label>
+            </div>
+            <div id="msg" style="color:red"></div>
+            <button id="buton-in">Log in</button>
+            <button id="buton-out">Log out</button>
+        </section>
+        <section id="activitate">
+            <h4>Activitatea contului</h4>
+            <ul>
+                <li>
+                    <a href="">Comenzi plasate</a>
+                </li>
+                <li>
+                    <a href="">Metode de plata</a>
+                </li>
+                <li>
+                    <a href="">Retururi</a>
+                </li>
+                <li>
+                    <a href="">Date facturare</a>
+                </li>
+                <li>
+                    <a href="">Adrese de livrare</a>
+                </li>
+                <li>
+                    <a href="">Review-uri</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div id="contact">
+            <a href="https://instagram.com/yourprofile" target="_blank">
+                <img alt="poza" src="poze/contact/instagram.png" alt="insta">
+            </a>
+            <a href="https://facebook.com/yourprofile" target="_blank">
+                <img alt="poza" src="poze/contact/facebook.png" alt="facebook">
+            </a>
+            <a href="" target="_blank">
+                <img alt="poza" src="poze/contact/mail.png" alt="mail">
+            </a>
+            <a href="" target="_blank">
+                <img alt="poza" src="poze/contact/suport.png" alt="suport">
+            </a>                
+        </div>
+        <div id="detalii">
+            <a href="/about">About us</a>
+            <a href="/terms">Termeni si conditii</a>
+            <a href="/privacy"> Politica de confidentialitate</a>
+            <a href="/rules">Regulamente</a>
+            <a href="/cookies">Cookies</a>
+        </div>
+        <p>Copyright © 2025</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/*GRID AREAS*/
+#date{grid-area:d;}
+#activitate{grid-area:a;}
+
+/*MAIN*/
+
+main{
+    background-color:#f4ece4;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(2,1fr));
+    grid-gap: 10px;
+    grid-template-areas: 
+        "d a";
+    padding-top:3em;
+    font-family: "Rye", serif;
+    margin-bottom:-8em;
+}
+main section{
+    padding:2em;
+    padding-top:0;
+    border-radius:2em;
+    display:block;
+}
+main ul{
+    list-style-type: none;   
+}
+section a{
+    text-decoration:none;
+    color:#ab7150;
+}
+section h4{
+    text-align:center;
+    padding-bottom:0.5em;
+    transition: transform 0.3s ease;
+    font-size: 1.5em;
+    color:#d68c7c;
+}
+section h4:hover{
+    transform: scale(1.1);
+}
+
+/*ACTIVITATEA CONTULUI*/
+#activitate li{
+    border: 1px solid #ab7150;
+    color:#ab7150;
+    padding:0.5em;
+    margin:1em;
+    border-radius:2em;
+    text-align:center;
+    transition: transform 0.2s ease;
+}
+#activitate li:hover{
+    color:#f4ece4;
+    transform: scale(1.07); 
+    background-color:#d68c7c;
+}
+
+/*DATE PERSONALE*/
+label{
+    padding:0.5em;
+}
+#date div{
+    display:flex;
+    flex-direction:column;
+    color:#ab7150;
+    padding:0.5em;
+    margin:1em;
+}
+#buton-in, #buton-out{
+    border:1.3px solid;
+    padding:0.5em 0em;
+    width:10em;
+    text-align:center;
+    border-radius:3em;
+    color:rgb(226, 52, 52);
+    transition: background-color 0.2s ease;
+}
+#buton-in:hover, #buton-out:hover{
+    color:lightgrey;
+    background-color: rgb(226, 52, 52);
+}
+#msg{
+    color:red;
+}
+#inputs{
+    margin-right:10em;
+}
+#salut{
+    color:#ab7150;
+    border:2x dotted black;
+    border-style:dotted;
+    padding:1em;
+    margin-right:35em;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 900px) {
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(1,1fr));
+        grid-template-areas: "d" "a";
+        padding: 2em;
+        grid-gap: 1em;
+        margin-bottom:-2em;
+    }
+}
+@media (max-width: 600px) {
+    main {
+        margin-bottom:-2em;
+    }
+    #date + #activitate{
+        padding:3em;
+    }
+    section h4 {
+        font-size: 1.2em;
+    }
+    #logout {
+        margin: 0 3em;
+    }
+}

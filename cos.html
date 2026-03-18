@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+        <title>CosyCorner HomePage</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="poze/favicon.png">
+        <meta charset="UTF-8">
+        <meta name="description" content="Magazin online de articole pentru sezonul rece">
+        <meta name="keywods" content="toamna,iarna,lumanare,patura,lampa,confort,liniste,rama,decoratiuni">
+        <meta name="author" content="Amarie Carina">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+
+        <link href="cos.css" rel="stylesheet">
+        <link href="general.css" rel="stylesheet">
+        <script src="cos.js"></script>
+        <script src="general.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat+Brush&family=Kaushan+Script&family=Londrina+Shadow&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Russo+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Russo+One&family=Rye&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="burger">☰</label>
+            <div class="logo">
+                <img src="poze/favicon.png" alt="404">
+                <a href="home.html">Cosycorner</a>
+            </div>
+            <div class="searchbar">
+                <input type="search" placeholder="Search..">
+                <span class="search-icon">🔍︎</span>
+            </div>
+            <div class="options">
+                <a href="profil.html" class="profile-button">𖠋</a>
+                <a href="favorite.html" class="favorite">❤︎</a>
+                <a href="cos.html" class="cart">🛒</a>
+            </div>
+            <div class="sidemenu">
+                <ul>
+                    <li>
+                        <a href="profil.html">Cont</a></li>
+                    <li>
+                        <a href="favorite.html">Favorite</a></li>
+                    <li>
+                        <a href="cos.html">Cos de cumparaturi</a></li>
+                    <li>
+                        <a href="home.html#lumanari">Iz de toamna</a>
+                    </li>
+                    <li>
+                        <a href="home.html#paturi">Paturi confortabile</a></li>
+                    <li id="extra">Decoratiuni
+                        <ul>
+                            <li>
+                                <a href="home.html#cani">Cani</a></li>
+                            <li>
+                                <a href="home.html#lampi">Lampi</a></li>
+                            <li>
+                                <a href="home.html#rame">Rame foto</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="home.html#bauturi">Bauturi calde</a></li>
+                </ul>
+            </div>
+    </header>
+
+    <nav>
+            <ul class="meniu">
+                <li>
+                    <a href="home.html#lumanari">Iz de toamna</a>
+                </li>
+                <li>
+                    <a href="home.html#paturi">Paturi confortabile</a></li>
+                <li id="decoratiuni">Decoratiuni
+                    <ul class="submeniu">
+                        <li>
+                            <a href="home.html#cani">Cani</a></li>
+                        <li>
+                            <a href="home.html#lampi">Lampi</a></li>
+                        <li id="last">
+                            <a href="home.html#rame">Rame foto</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="home.html#bauturi">Bauturi calde</a></li>
+            </ul>
+    </nav>
+    <main>
+        <section id="continut-cos">
+            <div  class="produs-cos" id="titlu">Continut cos</div>
+        </section>
+        <section id="cost-cos">
+            <div id="summary">Rezumatul comenzii</div>
+            <button id="save">Trimit comanda</button>
+            <div id="cost-total">Total: 0 RON</div>
+            <div id="tombola">
+                <div id="msg">Tombola! Alegeti o figura si primiti o reducere!!</div>
+                <svg width="360px" height="60px">
+                    <circle id="circle" cx="30" cy="30" r="30" stroke="pink" fill="white"></circle>
+                    <polygon id="star" points="75,60 100,45 125,60 115,35 130,20 108,20 100,0 92,20 70,20 85,35" stroke="pink" fill="white"></polygon>
+                    <rect id="square" x="150" y="10" stroke="pink" fill="white" width="50px" height="50px"></rect>
+                    <polygon id="triangle" points="220,60 280,60 250,10" stroke="pink" fill="white"></polygon>
+                    <polygon id="penthagon" points="313,60 347,60 355,30 330,5 305,30" stroke="pink" fill="white"></polygon>
+                </svg>
+            </div>
+            
+
+        </section>
+        
+    </main>
+
+    <footer>
+            <div id="contact">
+                <a href="https://instagram.com/yourprofile" target="_blank">
+                    <img src="poze/contact/instagram.png" alt="insta">
+                </a>
+                <a href="https://facebook.com/yourprofile" target="_blank">
+                    <img src="poze/contact/facebook.png" alt="facebook">
+                </a>
+                <a href="" target="_blank">
+                    <img src="poze/contact/mail.png" alt="mail">
+                </a>
+                <a href="" target="_blank">
+                    <img src="poze/contact/suport.png" alt="suport">
+                </a>                
+            </div>
+            <div id="detalii">
+                <a href="/about">About us</a>
+                <a href="/terms">Termeni si conditii</a>
+                <a href="/privacy"> Politica de confidentialitate</a>
+                <a href="/rules">Regulamente</a>
+                <a href="/cookies">Cookies</a>
+            </div>
+            <p>Copyright © 2025</p>
+    </footer>
+</body>
+</html>

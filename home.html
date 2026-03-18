@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>CosyCorner HomePage</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="poze/favicon.png">
+        <meta charset="UTF-8">
+        <meta name="description" content="Magazin online de articole pentru sezonul rece">
+        <meta name="keywods" content="toamna,iarna,lumanare,patura,lampa,confort,liniste,rama,decoratiuni">
+        <meta name="author" content="Amarie Carina">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+
+        <link href="home.css" rel="stylesheet">
+        <link href="general.css" rel="stylesheet">
+        <script src="home.js"></script>
+        <script src="general.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat+Brush&family=Kaushan+Script&family=Londrina+Shadow&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Russo+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Russo+One&family=Rye&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <header>
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="burger">☰</label>
+            <div class="logo">
+                <img src="poze/favicon.png" alt="404">
+                <a href="home.html">Cosycorner</a>
+            </div>
+            <div class="searchbar search-wrapper">
+                <input type="search" id = "search" placeholder="Search..">
+                <span class="search-icon">🔍︎</span>
+                <div id="search-results"></div>
+            </div>
+            <div class="options">
+                <a href="profil.html" class="profile-button">𖠋</a>
+                <a href="favorite.html" class="favorite">❤︎</a>
+                <a href="cos.html" class="carucior">🛒</a>
+            </div>
+            <div class="sidemenu">
+                <ul>
+                    <li>
+                        <a href="profil.html">Cont</a></li>
+                    <li>
+                        <a href="favorite.html">Favorite</a></li>
+                    <li>
+                        <a href="cos.html">Cos de cumparaturi</a></li>
+                    <li>
+                        <a href="home.html#lumanari">Iz de toamna</a>
+                    </li>
+                    <li>
+                        <a href="home.html#paturi">Paturi confortabile</a></li>
+                    <li id="extra">Decoratiuni
+                        <ul>
+                            <li>
+                                <a href="home.html#cani">Cani</a></li>
+                            <li>
+                                <a href="home.html#lampi">Lampi</a></li>
+                            <li>
+                                <a href="home.html#rame">Rame foto</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="home.html#bauturi">Bauturi calde</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="meniu">
+                <li>
+                    <a href="#lumanari">Iz de toamna</a>
+                </li>
+                <li>
+                    <a href="#paturi">Paturi confortabile</a></li>
+                <li id="decoratiuni">Decoratiuni
+                    <ul class="submeniu">
+                        <li>
+                            <a href="#cani">Cani</a></li>
+                        <li>
+                            <a href="#lampi">Lampi</a></li>
+                        <li id="last">
+                            <a href="#rame">Rame foto</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#bauturi">Bauturi calde</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="reduceri">
+                <div id="#continut">
+                    <h3 id="titlu">Sezonul rece aduce confort si oferte speciale!</h3>
+                    <h3>Descoperă promoțiile <b>1+1</b> și reducerile de până la <b>40%</b> la selecția noastră de produse pentru casă.</h3>
+                    <h3>Este momentul perfect să-ți reînnoiești decorul și să adaugi puțină căldură în fiecare colț!</h3>
+                    <br>
+                    <h3 style="text-align:right">Click pentru mai multe detalii!! ➜</h3>
+                </div>
+                <img alt="poza" src="poze/banner.png">
+            </section>
+            <section class="produse">
+                <h2 id="lumanari">Iz de toamna - Lumanari parfumate</h2>
+                <article class="l1">
+                    <img alt="poza" class="produs" src="poze/lumanari/L1.png">
+                    <div class="pret">54 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b> Lemon Buttercream</li>
+                            <li><b>Note: </b>lămâie proaspătă, cremă dulce de unt, vanilie ușoară</li>
+                            <li><b>Recipient: </b>borcan metalic verde mat, cu capac asortat și fundă satinată</li>
+                            <li><b>Compoziție ceară: </b>ceară naturală de soia (100%)</li>
+                            <li><b>Producător: </b>Scented Candle</li>
+                            <li><b>Origine: </b>UE</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="l3" data-name="Dream Candle - Vanilla Heart & Hazelnut">
+                    <img alt="poza" class="produs" src="poze/lumanari/L3.jpg">
+                    <div class="pret">41 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Dream Candle - Vanilla Heart & Hazelnut</li>
+                            <li><b>Note: </b>vanilie caldă, alună dulce prăjită, tonuri fine lactonice</li>
+                            <li><b>Recipient: </b>borcan de sticlă transparentă cu capac metalic auriu</li>
+                            <li><b>Compoziție ceară: </b>ceară de soia (97%), uleiuri parfumate premium(3%)</li>
+                            <li><b>Producător: </b>Cozy Candle</li>
+                            <li><b>Origine: </b>Europa de Est</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="l4" data-name="Autumn Night">
+                    <img alt="poza" class="produs" src="poze/lumanari/L4.jpg">
+                    <div class="pret">125 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Autumn Night</li>
+                            <li><b>Note: </b>lemn afumat, condimente de toamnă, frunze uscate, ambră caldă</li>
+                            <li><b>Recipient: </b>pahar gros de sticlă chihlimbar (amber), etichetă elegantă neagră</li>
+                            <li><b>Compoziție ceară: </b>ceară naturală de soia (100%)</li>
+                            <li><b>Producător: </b>Rustic Rays Candle Co.</li>
+                            <li><b>Origine: </b>SUA</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="l5" data-name="Pumpkin Spice">
+                    <img alt="poza" class="produs" src="poze/lumanari/L5.jpg">
+                    <div class="pret">97 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Pumpkin Spice</li>
+                            <li><b>Note: </b>dovleac dulce, cuișoare, scorțișoară, vanilie</li>
+                            <li><b>Recipient: </b>borcan de sticlă transparentă, etichetă decor cu motive autumnale</li>
+                            <li><b>Compoziție ceară: </b>ceară naturală de soia (99%), parfumuri de sezon(1%)</li>
+                            <li><b>Producător: </b>Sweet Water Decor</li>
+                            <li><b>Origine: </b>SUA</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="produse">
+                <h2 id="paturi">Paturi confortabile</h2>
+                <article class="l1">
+                    <img alt="poza" class="produs" src="poze/paturi/P1.jpg">
+                    <div class="pret">153 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Autumn Hearth</li>
+                            <li><b>Material: </b>amestec premium acril + microfibră densă</li>
+                            <li><b>Textura: </b>moale, călduroasă, cu suprafață puțin pufoasă</li>
+                            <li><b>Dimensiuni: </b>150 × 200 cm</li>
+                            <li><b>Producător: </b>Hearthline Textiles</li>
+                            <li><b>Origine: </b>UE</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="l3">
+                    <img alt="poza" class="produs" src="poze/paturi/P2.jpg">
+                    <div class="pret">110 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Rustic Plaid</li>
+                            <li><b>Material: </b>acril moale cu fir ușor elastic</li>
+                            <li><b>Textura: </b>fină, subțire dar călduroasă, cu franjuri decorative</li>
+                            <li><b>Dimensiuni: </b>130 × 180 cm</li>
+                            <li><b>Producător: </b>CozyWeave Home</li>
+                            <li><b>Origine: </b>Polonia</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="l4">
+                    <img alt="poza" class="produs" src="poze/paturi/P3.jpg">
+                    <div class="pret">158 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Cream Cloud</li>
+                            <li><b>Material: </b>fleece premium + microfibră tip „fluffy sherpa”</li>
+                            <li><b>Textura: </b>extrem de pufoasă, foarte caldă, aspect cloud-soft</li>
+                            <li><b>Dimensiuni: </b>150 × 200 cm</li>
+                            <li><b>Producător: </b>Nordico Home Comfort</li>
+                            <li><b>Origine: </b>Lituania</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="l5">
+                    <img alt="poza" class="produs" src="poze/paturi/P4.jpg">
+                    <div class="pret">126 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Amber Knit</li>
+                            <li><b>Material: </b>tricot gros acril + fir texturat pentru elasticitate</li>
+                            <li><b>Textura: </b>tricotură chunky, moale și confortabilă</li>
+                            <li><b>Dimensiuni: </b>140 x 190 cm</li>
+                            <li><b>Producător: </b>LoomCraft Studio</li>
+                            <li><b>Origine: </b>Romania</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="produse">
+                <h2 id="cani">Decoratiuni * Cani handmade</h2>
+                <article class="l1">
+                    <img alt="poza" class="produs" src="poze/cani/C1.jpg">
+                    <div class="pret">45 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Blue Meadow</li>
+                            <li><b>Material: </b>ceramică lucrată manual</li>
+                            <li><b>Capacitate: </b>250 ml</li>
+                            <li><b>Stil: </b>crem cu mici motive florale albastre pictate</li>
+                            <li><b>Producător: </b>Atelier Clay & Bloom</li>
+                            <li><b>Origine: </b>Romania</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="l3">
+                    <img alt="poza" class="produs" src="poze/cani/C2.jpg">
+                    <div class="pret">60 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Blossom Petal</li>
+                            <li><b>Material: </b>ceramică sculptată și pictată manual</li>
+                            <li><b>Capacitate: </b>220 ml</li>
+                            <li><b>Stil: </b>formă de floare deschisă în nuanțe de roz și verde</li>
+                            <li><b>Producător: </b>PetalCraft Ceramics</li>
+                            <li><b>Origine: </b>Italia</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="l4">
+                    <img alt="poza" class="produs" src="poze/cani/C3.jpg">
+                    <div class="pret">25 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Pumpkin Leaves</li>
+                            <li><b>Material: </b>ceramică emailată</li>
+                            <li><b>Capacitate: </b>300 ml</li>
+                            <li><b>Stil: </b>bej cu dovleac pictat și frunze de toamnă portocalii</li>
+                            <li><b>Producător: </b>AutumnMug Studio</li>
+                            <li><b>Origine: </b>Polonia</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="l5">
+                    <img alt="poza" class="produs" src="poze/cani/C4.jpg">
+                    <div class="pret">40 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Night Stars</li>
+                            <li><b>Material: </b>ceramică groasă lucrată manual</li>
+                            <li><b>Capacitate: </b>240 ml</li>
+                            <li><b>Stil: </b>albastru marin cu stele galbene pictate</li>
+                            <li><b>Producător: </b>LunaPottery</li>
+                            <li><b>Origine: </b>Grecia</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="produse">
+                <h2 id="lampi">Decoratiuni * Lampi</h2>
+                <article class="l1">
+                    <img alt="poza" class="produs" src="poze/lampi/V1.jpg">
+                    <div class="pret">50 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>BloomLight Petal Lamp</li>
+                            <li><b>Material: </b>Rășină sculptată + metal ușor</li>
+                            <li><b>Tip luminare: </b>LED cu lumină caldă ambientală</li>
+                            <li><b>Stil: </b>Botanic, romantic, artizanal</li>
+                            <li><b>Producător: </b>LuminiArt Studio</li>
+                            <li><b>Origine: </b>Romania</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="l3">
+                    <img alt="poza" class="produs" src="poze/lampi/V2.jpg">
+                    <div class="pret">45 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>VerdantLeaf Ceramic Lamp</li>
+                            <li><b>Material: </b>Ceramică glazurată + abajur textil din bumbac</li>
+                            <li><b>Tip luminare: </b>Lumină caldă difuză (compatibil E14/E27)</li>
+                            <li><b>Stil: </b>Vintage, rustic, cottagecore</li>
+                            <li><b>Producător: </b>Casa Verde Lighting</li>
+                            <li><b>Origine: </b>Portugalia</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="l4">
+                    <img alt="poza" class="produs" src="poze/lampi/V3.jpg">
+                    <div class="pret">70 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Himalayan EmberGlow Salt Lamp</li>
+                            <li><b>Material: </b>Cristal natural de sare, bază din lemn</li>
+                            <li><b>Tip luminare: </b>Lumina cakda</li>
+                            <li><b>Stil: </b>Natural, wellness, inspirat de spa</li>
+                            <li><b>Producător: </b>Himalayan Salt Works</li>
+                            <li><b>Origine: </b>Pakistan</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="l5">
+                    <img alt="poza" class="produs" src="poze/lampi/V4.jpg">
+                    <div class="pret">55 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Serenity Glass Table Lamp</li>
+                            <li><b>Material: </b>Sticlă transparentă + abajur textil + elemente metalice</li>
+                            <li><b>Tip luminare: </b>Lumină caldă (bec E27)</li>
+                            <li><b>Stil: </b>Clasic, contemporan, minimalist elegant</li>
+                            <li><b>Producător: </b>LumaHome</li>
+                            <li><b>Origine: </b>Turcia</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+            <section class="produse">
+                <h2 id="rame">Decoratiuni * Rame foto</h2>
+                <article class="l1">
+                    <img alt="poza" class="produs" src="poze/rame/R1.jpg">
+                    <div class="pret">56 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Gingham Rustic Frame Set</li>
+                            <li><b>Material: </b>MDF, sticlă transparentă</li>
+                            <li><b>Dimensiune: </b>10x15cm 13x18 cm</li>
+                            <li><b>Stil: </b>Rustic, country, cozy-home</li>
+                            <li><b>Producător: </b>FrameCraft Home</li>
+                            <li><b>Origine: </b>Romania</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="l3">
+                    <img alt="poza" class="produs" src="poze/rame/R2.png">
+                    <div class="pret">50 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Vintage Ballerina Art Frame</li>
+                            <li><b>Material: </b>Rășină decorativă, sticlă protectoare</li>
+                            <li><b>Dimensiune: </b>13x18 cm</li>
+                            <li><b>Stil: </b>Shabby chic, vintage romantic</li>
+                            <li><b>Producător: </b>BelleDécor Studio</li>
+                            <li><b>Origine: </b>Italia</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="l4">
+                    <img alt="poza" class="produs" src="poze/rame/R3.jpg">
+                    <div class="pret">40 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Golden Oval Mini Frame</li>
+                            <li><b>Material: </b>Metal ușor finisat auriu, suport textil</li>
+                            <li><b>Dimensiune: </b>7x10 cm</li>
+                            <li><b>Stil: </b>Clasic, victorian, elegant</li>
+                            <li><b>Producător: </b>Heritage Frames</li>
+                            <li><b>Origine: </b>Turcia</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="l5">
+                    <img alt="poza" class="produs" src="poze/rame/R4.jpg">
+                    <div class="pret">45 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Baroque Gold Art Frame</li>
+                            <li><b>Material: </b>Rășină cu finisaj auriu, sticlă</li>
+                            <li><b>Dimensiune: </b>13x18 cm</li>
+                            <li><b>Stil: </b>Baroc, clasic, ornamental</li>
+                            <li><b>Producător: </b>Aurelia Home Decor</li>
+                            <li><b>Origine: </b>Franța</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="produse">
+                <h2 id="bauturi">Bauturi calde * Cosycorner™</h2>
+                <article class="l1">
+                    <img alt="poza" class="produs" src="poze/bauturi/B1.png">
+                    <div class="pret">65 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Cinnamon Brew Coffee Beans</li>
+                            <li><b>Ingrediente: </b>Boabe de cafea 100% Arabica, aromă naturală de scorțișoară</li>
+                            <li><b>Aroma: </b>Note calde de scorțișoară, corp mediu, aromă dulceag-picantă</li>
+                            <li><b>Ambalaj: </b>Pouch resigilabil din hârtie kraft cu liner interior</li>
+                            <li><b>Producător: </b>CosyCorner</li>
+                            <li><b>Origine: </b>Columbia (boabe), ambalat în România</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="l3">
+                    <img alt="poza" class="produs" src="poze/bauturi/B2.png">
+                    <div class="pret">43 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Pumpkin Spice Herbal Tea Bags</li>
+                            <li><b>Ingrediente: </b>Amestec de plante, arome</li>
+                            <li><b>Aroma: </b>Note de dovleac, condimente de toamnă, ușor dulce</li>
+                            <li><b>Ambalaj: </b>Cutie rigidă din carton mat</li>
+                            <li><b>Producător: </b>CosyCorner</li>
+                            <li><b>Origine: </b>India (plante), ambalat în Romania</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="l4">
+                    <img alt="poza" class="produs" src="poze/bauturi/B3.png">
+                    <div class="pret">32 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Velvet Cocoa Hot Chocolate</li>
+                            <li><b>Ingrediente: </b>Pudră de cacao premium, zahăr brun, aromă naturală</li>
+                            <li><b>Aroma: </b>Ciocolată intensă, cremoasă, cu textură catifelată</li>
+                            <li><b>Ambalaj: </b>Cutie dreptunghiulară din carton kraft, design minimalist ilustrat</li>
+                            <li><b>Producător: </b>CosyCorner</li>
+                            <li><b>Origine: </b>Belgia(cacao), ambalat in Romania</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="l5">
+                    <img alt="poza" class="produs" src="poze/bauturi/B4.png">
+                    <div class="pret">55 RON</div>
+                    <div class="descriere">
+                        <ul>
+                            <li><b>Nume: </b>Autumn Harvest Special Drink</li>
+                            <li><b>Ingrediente: </b>Amestec instant aromatizat (măr, scorțișoară, caramel)</li>
+                            <li><b>Aroma: </b>Dulce-spicy, condimente de toamnă</li>
+                            <li><b>Ambalaj: </b>Pouch resigilabil din hârtie kraft cu liner interior</li>
+                            <li><b>Producător: </b>CosyCorner</li>
+                            <li><b>Origine: </b>Germania (amestec), ambalat în România</li>
+                        </ul>
+                        <div class="actiuni">
+                            <button class="fav">❤</button>
+                            <button class="cart">🛒</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+            
+        <footer>
+            <div id="contact">
+                <img src="poze/contact/instagram.png" alt="insta">
+                <img src="poze/contact/facebook.png" alt="facebook">
+                <img src="poze/contact/mail.png" alt="mail">
+                <img src="poze/contact/suport.png" alt="suport">                
+            </div>
+            <div id="detalii">
+                <a href="/about">About us</a>
+                <a href="/terms">Termeni si conditii</a>
+                <a href="/privacy"> Politica de confidentialitate</a>
+                <a href="/rules">Regulamente</a>
+                <a href="/cookies">Cookies</a>
+            </div>
+            <p>Copyright © 2025</p>
+        </footer>
+    </body>
+</html>

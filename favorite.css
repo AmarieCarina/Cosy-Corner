@@ -1,0 +1,51 @@
+main h4{
+    text-align:center;
+    padding:1em;
+    margin-top:1em;
+    transition: transform 0.3s ease;
+    font-size: 1.5em;
+    color:#d68c7c;
+    font-family: "Rye", serif;
+}
+main h4:hover{
+    transform: scale(1.1);
+}
+/* FAVORITE GRID */
+.produse-favorite {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+/* FAVORITE PRODUCT CARD */
+.produse-favorite div {
+    position: relative;
+    text-align:center;
+    padding: 1em;
+    margin:1em;
+    background: #fffaf5;
+    border-radius: 1.2em;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.25s ease;
+    z-index:100;
+}
+#favorites-count{
+    font-family: "Kumbh Sans", sans-serif;
+    padding:0.7em;
+    margin-left:3em;
+    background-color: #fffaf5;
+    width:13em;
+}
+
+.produse-favorite div:hover {
+    transform: scale(1.02);
+}
+
+/* PRET */
+.produse-favorite .pret {
+    margin-left: 0;
+    margin-top: 0.5em;
+    font-weight: bold;
+    color: #754c33;
+    text-align: center;
+}

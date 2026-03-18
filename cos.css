@@ -1,0 +1,130 @@
+
+main{
+    display:flex;
+    flex-direction:row;
+}
+/*PRODUSE DIN COS*/
+main .poza-produs{
+    height:200px;
+}
+.produs-cos {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+  
+  padding: 1em;
+  border: 1px solid #ab7150;
+  border-radius: 1em;
+  background-color: #fff;
+  margin: 1em;
+  font-family:"Kumbh Sans", sans-serif;
+}
+#titlu{
+  font-family:"Russo One", sans-serif;
+  color:#d68c7c;
+
+}
+.info{
+  display:flex;
+  flex-direction:column;
+  padding:1em;
+  text-align:center;
+}
+.poza-produs {
+  max-width: 100%;
+  border-radius: 0.5em;
+}
+.produs-cos a {
+  text-decoration: none;
+  font-family:"Russo One", sans-serif;
+  color: #ab7150;
+  background-color:#f0d5c5;
+  padding:0.5em;
+  margin-bottom:0.5em;
+}
+/* #continut-cos{
+  width:1/2vw;
+} */
+#tombola{
+  border:2px solid brown;
+  padding:2em;
+  margin:1em;
+  background-color: #dca18f;
+}
+#msg{
+  padding-bottom:1em;
+  font-family:"Russo One", sans-serif;
+  color:white;
+}
+
+
+/*REZUMAT COS*/
+#summary{
+  font-family:"Russo One", sans-serif;
+  padding:2em;
+  text-align:center;
+  font-size:1.3em;
+  color:#d68c7c;
+}
+#cost-total{
+  justify-content: right;
+  font-family:"Russo One", sans-serif;
+  color:#d68c7c;
+  margin:1em;
+  margin-left:20em;
+}
+#save{
+  padding:0.5em;
+  margin: 0 12em;
+  font-family:"Russo One", sans-serif;
+  background-color: #fff;
+  border:3px solid #ab7150;
+  color:#ab7150;
+  border-radius:2em;
+}
+#save:hover{
+  background-color: #ab7150;
+  color:#fff;
+  border-color:#ab7150;
+  cursor:pointer;
+}
+#cost-cos{
+  display:flex;
+  flex-direction: column;
+  padding:2em;
+}
+#cost-cos > p{
+  margin: 0.5em;
+  padding:0;
+  border-radius:1em;
+  transition: background-color 0.2s ease;
+  padding:1em;
+  font-family: "Kumbh Sans", sans-serif;
+}
+#cost-cos p:hover{
+  background-color:#fff;
+}
+#total{
+  font-family:"Russo One", sans-serif;
+  text-align:right;
+  margin-right:1em;
+  background-color:#f0d5c5;
+  margin-left:17em;
+  border-radius:1em;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width:900px) {
+  main{
+    flex-direction:column;
+  }
+}
+@media screen and (max-width:600px){
+  .produs-cos{
+    flex-direction:column;
+  }
+  #total{
+    margin-left:6em;
+  }
+}
