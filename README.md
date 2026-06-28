@@ -5,9 +5,8 @@
 
 **Student**: Amarie Elena Carina, gr. 132 (2026)
 
-![HTML](https://img.shields.io/badge/HTML-3776AB?style=flat-square&logo=html&logoColor=blue) &nbsp;&nbsp;
-![CSS](https://img.shields.io/badge/CSS?style=flat-square)
-![JavaScript](https://img.shields.io/badge/JavaScript?style=flat-square)
-![VSCode](https://img.shields.io/badge/VSCode-000000?style=flat-square&logo=vscode&logoColor=white&color=blue)&nbsp;&nbsp;
-![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square) 
-
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) &nbsp;&nbsp; 
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) &nbsp;&nbsp; 
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) &nbsp;&nbsp; 
+![VSCode](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white) &nbsp;&nbsp; 
+![Status](https://img.shields.io/badge/Status-80%25-orange?style=flat-square)
