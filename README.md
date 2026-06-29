@@ -1,7 +1,7 @@
 
 <h1 align="center"> Cosy Corner online shop </h1>
 
-> This repository contains ...
+> This repository contains the front-end source files for a fictional, uniquely designed e-commerce website. Features local storage integration for shopping carts and favorite items.
 
 **Student**: Amarie Elena Carina, gr. 132 (2026)
 
