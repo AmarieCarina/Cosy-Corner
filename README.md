@@ -11,8 +11,6 @@
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white) &nbsp;&nbsp; 
 ![Status](https://img.shields.io/badge/Status-80%25-orange?style=flat-square)
 
-<img width="1793" height="571" alt="image" src="https://github.com/user-attachments/assets/cbf1181a-24a1-40d3-b04c-d67e32ad9339" />
-<img width="1888" height="564" alt="image" src="https://github.com/user-attachments/assets/daca4404-b17c-477e-9384-8a6951eca560" />
 <img width="1886" height="563" alt="image" src="https://github.com/user-attachments/assets/bf21ac35-3da1-478a-ba4f-226d348a4b89" />
 
 
