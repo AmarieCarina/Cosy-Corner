@@ -13,4 +13,19 @@
 
 <img width="1886" height="563" alt="image" src="https://github.com/user-attachments/assets/bf21ac35-3da1-478a-ba4f-226d348a4b89" />
 
+## Installation & Local Setup
 
+Follow these steps to get the project up and running on your local machine:
+
+### Prerequisites
+* A modern web browser (e.g., Chrome, Edge, Firefox).
+* [VS Code](https://code.visualstudio.com/) (recommended code editor).
+* [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension for VSCode.
+
+### Setup Instructions
+1. Clone the repository:
+```bash
+  git clone https://github.com/AmarieCarina/Cosy-Corner
+```
+2. Open the folder in VSCode.
+3. Run the `home.html` file with the Live Server Option. The website will automatically open in your default browser.
